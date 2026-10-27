@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0b1020" />
+        <title>Viborita | JavaPlay</title>
+        <link rel="icon" type="image/jpeg" href="../assets/images/snake.jpg" />
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="../styles/vibora.css" />
+        <script src="../scripts/vibora.js" defer></script>
+    </head>
+    <body class="pagina-vibora">
+        <header class="encabezado">
+            <a href="../index.html" class="logo">Juegos de <span>JAVA</span></a>
+            <nav aria-label="Navegación principal">
+                <a href="../index.html">Volver al catálogo</a>
+            </nav>
+        </header>
+
+        <main class="vibora-principal">
+            <section class="juego-vibora" aria-labelledby="titulo-vibora">
+                <p class="etiqueta">JUEGA Y SUPERA TU MARCADOR</p>
+                <h1 id="titulo-vibora">Viborita</h1>
+                <p class="vibora-instruccion">
+                    Usa las flechas o WASD para moverte. Come la fruta y evita las paredes y tu propia cola.
+                </p>
+
+                <div class="vibora-marcador" aria-label="Puntaje">
+                    <span>Puntos</span>
+                    <strong id="puntajeVibora">0</strong>
+                </div>
+
+                <div class="vibora-tablero">
+                    <canvas id="canvas" width="600" height="600" tabindex="0"
+                        aria-label="Tablero de la viborita. Usa las flechas o WASD para moverte.">
+                        Tu navegador no puede mostrar el tablero de la viborita.
+                    </canvas>
+                    <p id="estadoVibora" class="vibora-estado" aria-live="polite">
+                        Presiona Iniciar o una flecha para jugar.
+                    </p>
+                </div>
+
+                <div class="vibora-acciones">
+                    <button id="iniciarVibora" type="button">Iniciar juego</button>
+                    <button id="reiniciarVibora" class="secundario" type="button">Reiniciar</button>
+                </div>
+
+                <div class="vibora-controles" role="group" aria-label="Controles en pantalla">
+                    <button type="button" data-direccion="arriba" aria-label="Mover arriba">↑</button>
+                    <button type="button" data-direccion="izquierda" aria-label="Mover a la izquierda">←</button>
+                    <button type="button" data-direccion="abajo" aria-label="Mover abajo">↓</button>
+                    <button type="button" data-direccion="derecha" aria-label="Mover a la derecha">→</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

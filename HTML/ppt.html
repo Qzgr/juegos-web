@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0b1020" />
+        <title>Piedra, papel o tijera | JavaPlay</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <script src="../scripts/ppt.js" defer></script>
+    </head>
+    <body class="pagina-ppt">
+        <header class="encabezado">
+            <a href="../index.html" class="logo">Juegos de <span>JAVA</span></a>
+            <nav aria-label="Navegación principal">
+                <a href="../index.html">Volver al catálogo</a>
+            </nav>
+        </header>
+
+        <main class="ppt-principal">
+            <section class="juego-ppt" aria-labelledby="titulo-ppt">
+                <p class="etiqueta">JUEGA CONTRA LA COMPUTADORA</p>
+                <h1 id="titulo-ppt">Piedra, papel o tijera</h1>
+                <p class="ppt-instruccion">Elige una opción para jugar una ronda.</p>
+
+                <div class="ppt-opciones" role="group" aria-label="Elige tu jugada">
+                    <button class="ppt-boton" type="button" data-eleccion="piedra">
+                        <span class="ppt-icono" aria-hidden="true">✊</span>Piedra
+                    </button>
+                    <button class="ppt-boton" type="button" data-eleccion="papel">
+                        <span class="ppt-icono" aria-hidden="true">✋</span>Papel
+                    </button>
+                    <button class="ppt-boton" type="button" data-eleccion="tijera">
+                        <span class="ppt-icono" aria-hidden="true">✌️</span>Tijera
+                    </button>
+                </div>
+
+                <p class="ppt-resultado" id="resultadoPpt" aria-live="polite" aria-atomic="true">
+                    <strong>¡Que comience el juego!</strong>
+                    <span>Elige piedra, papel o tijera.</span>
+                </p>
+
+                <div class="ppt-marcador" aria-label="Marcador">
+                    <div><span>Tú</span><b id="puntosJugador">0</b></div>
+                    <div><span>Computadora</span><b id="puntosComputadora">0</b></div>
+                </div>
+
+                <button class="reiniciar-ppt" id="reiniciarPpt" type="button">Reiniciar marcador</button>
+            </section>
+        </main>
+    </body>
+</html>

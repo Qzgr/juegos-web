@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portal de Juegos Java</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <header class="encabezado">
+            <a href="index.html" class="logo">Juegos de <span> JAVA</span></a>
+
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#juegos">Juegos</a>
+                <a href="#acerca">Acerca de</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="inicio">
+                <p class="etiqueta">PROGRAMACIÓN EN JAVA</p>
+                <h1>
+                    Tu próximo juego<br />
+                    comienza aquí.
+                </h1>
+                <p>Explora, juega y pon a prueba tus habilidades.</p>
+                <a href="#juegos" class="boton">Explorar juegos</a>
+            </section>
+
+            <section class="seccion" id="juegos">
+                <h2>Catálogo de juegos</h2>
+                <p class="descripcion">Selecciona uno de nuestros juegos programados en Java.</p>
+
+                <div class="catalogo">
+                    <article class="tarjeta">
+                        <div class="icono">✊</div>
+                        <h3>Piedra, papel o tijera</h3>
+                        <p>Compite contra la computadora y consigue la victoria.</p>
+                        <a class="boton" href="HTML/ppt.html">Jugar ahora</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="icono">🧠</div>
+                        <h3>Reto de Java</h3>
+                        <p>Contesta una pregunta sobre programación Java.</p>
+                        <button onclick="abrirJuego('quiz')">Jugar ahora</button>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="icono">X</div>
+                        <h3>Gato</h3>
+                        <p>Consta de un tablero de 3x3 donde los jugadores colocan sus fichas.</p>
+                        <a class="boton" href="HTML/gato.html">Jugar ahora</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <div class="icono">🐍</div>
+                        <h3>Snake</h3>
+                        <p>Controla la serpiente y come la comida para crecer.</p>
+                        <a class="boton" href="HTML/vibora.html">Jugar ahora</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="zona-juego" id="zonaJuego" hidden>
+                <h2 id="tituloJuego">Juego</h2>
+                <div id="contenidoJuego"></div>
+                <p id="resultado" aria-live="polite"></p>
+                <button class="secundario" onclick="cerrarJuego()">Volver al menú</button>
+            </section>
+
+            <section class="acerca" id="acerca">
+                <h2>Sobre el proyecto</h2>
+                <p>
+                    Este programa fue creado por cuatro personas con juegos cuya lógica se procesa mediante Java los
+                    compañeros que colaboraron para realizar el proyecto Evelin Campo Romero Norely de Guadalupe Torres
+                    Sanchez Quereb ziletai Gonzalez Rosas Rodrigo Alexis Rodriguez Aguilar .
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 JavaPlay | Proyecto escolar de programación</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>

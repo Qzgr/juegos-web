@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0b1020" />
+        <title>Gato | JavaPlay</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <script src="../scripts/gato.js" defer></script>
+    </head>
+    <body class="pagina-gato">
+        <header class="encabezado">
+            <a href="../index.html" class="logo">Juegos de <span>JAVA</span></a>
+            <nav aria-label="Navegación principal">
+                <a href="../index.html">Volver al catálogo</a>
+            </nav>
+        </header>
+
+        <main class="gato-principal">
+            <section class="juego-gato" aria-labelledby="titulo-gato">
+                <p class="etiqueta">DOS JUGADORES</p>
+                <h1 id="titulo-gato">Gato</h1>
+                <p class="gato-instruccion">Consigue tres fichas en línea para ganar.</p>
+                <p class="gato-estado" id="estadoGato" aria-live="polite">Turno de X</p>
+
+                <div class="tablero-gato" role="group" aria-label="Tablero de gato">
+                    <button class="casilla-gato" type="button" data-casilla="0" aria-label="Casilla 1, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="1" aria-label="Casilla 2, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="2" aria-label="Casilla 3, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="3" aria-label="Casilla 4, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="4" aria-label="Casilla 5, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="5" aria-label="Casilla 6, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="6" aria-label="Casilla 7, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="7" aria-label="Casilla 8, vacía"></button>
+                    <button class="casilla-gato" type="button" data-casilla="8" aria-label="Casilla 9, vacía"></button>
+                </div>
+
+                <button class="reiniciar-gato" id="reiniciarGato" type="button">Nueva partida</button>
+            </section>
+        </main>
+    </body>
+</html>
